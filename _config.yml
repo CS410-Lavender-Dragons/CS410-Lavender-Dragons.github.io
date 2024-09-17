@@ -1,3 +1,4 @@
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal
+remote_theme: sighingnow/jekyll-gitbook
 title: Lavender Dragons Rust Dialect
 description: Documentation of Rust Dialect
