@@ -1,4 +1,4 @@
-# Lavender Dragons Rust Dialect
+# Lavender Dragons Oxide Dialect
 
 - Definite Iteration
 - Indefinite Iteration
