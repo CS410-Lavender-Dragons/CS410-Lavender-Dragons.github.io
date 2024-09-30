@@ -1,21 +1,28 @@
+# The Oxide Programming Language
 
-# Language
+[The Rust Programming Language](title-page.md)
 
-## Definite Iteration
+## Basic Oxide Literacy
 
-## Indefinite Iteration
+- [Data Types](data-types.md)
 
-## Conditional Branching
+- [Variable Declaration and Assignment](var-dec.md)
 
-## Variable Declaration and Assignment
+- [Arithmetic](arith.md)
 
-## Data Types
+- [Comparison](comp.md)
 
-## Arithmetic
+- [Precedence and Associativity](prec-assoc.md)
 
-## Comparison
+- [Conditional Branching](cond-branch.md)
 
-## Precedence and Associativity
+- [Definite Iteration](def-it.md)
 
-# Tokens
-token token token
+- [Indefinite Iteration](indef-it.md)
+ 
+## Compiler
+
+- [Lexer](lexer.md)
+    - [Tokens](tokens-list.md)
+    - [State Transition Table](state-trans.md)
+- [Parser](parser.md)
