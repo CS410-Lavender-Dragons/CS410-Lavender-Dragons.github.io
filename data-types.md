@@ -1,4 +1,5 @@
 ## Data Types Supported by Oxide
+Scalar types include integers and floating point numbers.
 
 |Length|Signed Integer|Signed Floating Point|
 |------|------|--------|
