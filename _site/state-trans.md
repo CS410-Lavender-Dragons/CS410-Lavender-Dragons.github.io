@@ -1,1 +1,0 @@
-## State Transition Table

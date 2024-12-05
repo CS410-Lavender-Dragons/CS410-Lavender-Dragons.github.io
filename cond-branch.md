@@ -1,4 +1,11 @@
+---
+layout: sidebar
+title: Data Types
+---
+
+
 ## Conditional Branching of Oxide
+
 Branching syntax consists of a condition followed by a body. The condition is written without parentheses.
 
 Examples:

@@ -1,3 +1,8 @@
+---
+layout: sidebar
+title: Data Types
+---
+
 ## Precedence and Associativity of Oxide
 
 |Operator|Prec. & Assoc.|

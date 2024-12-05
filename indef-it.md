@@ -1,3 +1,8 @@
+---
+layout: sidebar
+title: Data Types
+---
+
 # Indefinite Iteration of Oxide
 The loop keyword indicates an infinite loop. The break statement exits the loop and the continue keyword skips the rest of the iteration and starts a new one.
 

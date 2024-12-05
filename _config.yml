@@ -1,4 +1,38 @@
-# theme: jekyll-theme-minimal
 remote_theme: sighingnow/jekyll-gitbook
 title: Lavender Dragons Rust Dialect
 description: Documentation of Rust Dialect
+
+sidebar:
+  - title: "The Rust Programming Language"
+    url: "/title-page"
+  - title: "Basic Oxide Literacy"
+    children:
+      - title: "Data Types"
+        url: "/data-types"
+      - title: "Variable Declaration and Assignment"
+        url: "/var-dec"
+      - title: "Arithmetic"
+        url: "/arith"
+      - title: "Comparison"
+        url: "/comp"
+      - title: "Precedence and Associativity"
+        url: "/prec-assoc"
+      - title: "Conditional Branching"
+        url: "/cond-branch"
+      - title: "Definite Iteration"
+        url: "/def-it"
+      - title: "Indefinite Iteration"
+        url: "/indef-it"
+  - title: "Compiler"
+    children:
+      - title: "Lexer"
+        url: "/lexer"
+        children:
+          - title: "Tokens"
+            url: "/tokens-list"
+          - title: "State Transition Table"
+            url: "/state-trans"
+      - title: "Parser"
+        url: "/parser"
+
+

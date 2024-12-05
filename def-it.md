@@ -1,3 +1,8 @@
+---
+layout: sidebar
+title: Data Types
+---
+
 # Definite Iteration of Oxide
 Iteration is done through iterators. The for in construct can be used to iterate through the iterator.
 

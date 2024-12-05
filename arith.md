@@ -1,3 +1,8 @@
+---
+layout: sidebar
+title: Data Types
+---
+
 ## Arithmetic Operations of Oxide
 Addition, subtraction, multiplication, division.
 

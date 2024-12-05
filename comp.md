@@ -1,3 +1,8 @@
+---
+layout: sidebar
+title: Data Types
+---
+
 ## Numerical Comparison Operators of Oxide
 Greater than, greater than or equal to, less than, less than or equal to, equal to.
 

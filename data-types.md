@@ -1,3 +1,8 @@
+---
+layout: sidebar
+title: Data Types
+---
+
 ## Data Types Supported by Oxide
 Scalar types include integers and floating point numbers.
 

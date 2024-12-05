@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Types</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Contents</h2>
+      <ul>
+        
+          <li>
+            <a href="/title-page">The Rust Programming Language</a>
+            
+          </li>
+        
+          <li>
+            <a href="">Basic Oxide Literacy</a>
+            
+              <ul>
+              
+                <li>
+                  <a href="/data-types">Data Types</a>
+                  
+                </li>
+              
+                <li>
+                  <a href="/var-dec">Variable Declaration and Assignment</a>
+                  
+                </li>
+              
+                <li>
+                  <a href="/arith">Arithmetic</a>
+                  
+                </li>
+              
+                <li>
+                  <a href="/comp">Comparison</a>
+                  
+                </li>
+              
+                <li>
+                  <a href="/prec-assoc">Precedence and Associativity</a>
+                  
+                </li>
+              
+                <li>
+                  <a href="/cond-branch">Conditional Branching</a>
+                  
+                </li>
+              
+                <li>
+                  <a href="/def-it">Definite Iteration</a>
+                  
+                </li>
+              
+                <li>
+                  <a href="/indef-it">Indefinite Iteration</a>
+                  
+                </li>
+              
+              </ul>
+            
+          </li>
+        
+          <li>
+            <a href="">Compiler</a>
+            
+              <ul>
+              
+                <li>
+                  <a href="/lexer">Lexer</a>
+                  
+                    <ul>
+                    
+                      <li><a href="/tokens-list">Tokens</a></li>
+                    
+                      <li><a href="/state-trans">State Transition Table</a></li>
+                    
+                    </ul>
+                  
+                </li>
+              
+                <li>
+                  <a href="/parser">Parser</a>
+                  
+                </li>
+              
+              </ul>
+            
+          </li>
+        
+      </ul>
+    </aside>
+
+    <main class="content">
+      <h1 id="tokens-of-oxide">Tokens of Oxide</h1>
+<p>All inputs mapped to their corresponding token.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Input</th>
+      <th>Token</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>in</td>
+      <td>in keyword</td>
+    </tr>
+    <tr>
+      <td>if</td>
+      <td>if keyword</td>
+    </tr>
+    <tr>
+      <td>loop</td>
+      <td>loop keyword</td>
+    </tr>
+    <tr>
+      <td>let</td>
+      <td>let keyword</td>
+    </tr>
+    <tr>
+      <td>else</td>
+      <td>else keyword</td>
+    </tr>
+    <tr>
+      <td>for</td>
+      <td>for keyword</td>
+    </tr>
+    <tr>
+      <td>mut</td>
+      <td>mut keyword</td>
+    </tr>
+    <tr>
+      <td>break</td>
+      <td>break keyword</td>
+    </tr>
+    <tr>
+      <td>continue</td>
+      <td>continue keyword</td>
+    </tr>
+    <tr>
+      <td>0-9</td>
+      <td>numeric</td>
+    </tr>
+    <tr>
+      <td>.</td>
+      <td>decimal</td>
+    </tr>
+    <tr>
+      <td>..</td>
+      <td>range operator</td>
+    </tr>
+    <tr>
+      <td>..=</td>
+      <td>inclusive range operator</td>
+    </tr>
+    <tr>
+      <td>{</td>
+      <td>open bracket</td>
+    </tr>
+    <tr>
+      <td>}</td>
+      <td>close bracket</td>
+    </tr>
+    <tr>
+      <td>(</td>
+      <td>open parenthesis</td>
+    </tr>
+    <tr>
+      <td>)</td>
+      <td>close parenthesis</td>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td>addition operator</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>subtraction operator</td>
+    </tr>
+    <tr>
+      <td>*</td>
+      <td>multiplication operator</td>
+    </tr>
+    <tr>
+      <td>/</td>
+      <td>division operator</td>
+    </tr>
+    <tr>
+      <td>&gt;</td>
+      <td>greater than operator</td>
+    </tr>
+    <tr>
+      <td>&gt;=</td>
+      <td>greater than or equal operator</td>
+    </tr>
+    <tr>
+      <td>&lt;</td>
+      <td>less than operator</td>
+    </tr>
+    <tr>
+      <td>&lt;=</td>
+      <td>less than or equal operator</td>
+    </tr>
+    <tr>
+      <td>=</td>
+      <td>assignment operator</td>
+    </tr>
+    <tr>
+      <td>==</td>
+      <td>equality comparison operator</td>
+    </tr>
+    <tr>
+      <td>;</td>
+      <td>statement terminator</td>
+    </tr>
+    <tr>
+      <td>i8</td>
+      <td>8-bit signed integer data type</td>
+    </tr>
+    <tr>
+      <td>i16</td>
+      <td>16-bit signed integer data type</td>
+    </tr>
+    <tr>
+      <td>i32</td>
+      <td>32-bit signed integer data type</td>
+    </tr>
+    <tr>
+      <td>i64</td>
+      <td>64-bit signed integer data type</td>
+    </tr>
+    <tr>
+      <td>i128</td>
+      <td>128-bit signed integer data type</td>
+    </tr>
+    <tr>
+      <td>f8</td>
+      <td>8-bit signed floating point data type</td>
+    </tr>
+    <tr>
+      <td>f16</td>
+      <td>16-bit signed floating point data type</td>
+    </tr>
+    <tr>
+      <td>f32</td>
+      <td>32-bit signed floating point data type</td>
+    </tr>
+    <tr>
+      <td>f64</td>
+      <td>64-bit signed floating point data type</td>
+    </tr>
+    <tr>
+      <td>f128</td>
+      <td>128-bit signed floating point data type</td>
+    </tr>
+    <tr>
+      <td>:</td>
+      <td>type assignment operator</td>
+    </tr>
+  </tbody>
+</table>
+
+
+    </main>
+  </div>
+</body>
+</html>
+

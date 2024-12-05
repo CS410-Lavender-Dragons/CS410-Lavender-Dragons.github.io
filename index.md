@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: sidebar
+title: Data Types
 ---
+
 
 # The Oxide Programming Language
 

@@ -97,50 +97,34 @@
     </aside>
 
     <main class="content">
-      <h1 id="the-oxide-programming-language">The Oxide Programming Language</h1>
+      <h1 id="indefinite-iteration-of-oxide">Indefinite Iteration of Oxide</h1>
+<p>The loop keyword indicates an infinite loop. The break statement exits the loop and the continue keyword skips the rest of the iteration and starts a new one.</p>
 
-<p><a href="title-page.md">The Rust Programming Language</a></p>
+<p>Examples:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>loop {
+    	count += 1;
 
-<h2 id="basic-oxide-literacy">Basic Oxide Literacy</h2>
+    	if count == 3 {
+          continue;
+    	}
 
-<ul>
-  <li>
-    <p><a href="data-types.md">Data Types</a></p>
-  </li>
-  <li>
-    <p><a href="var-dec.md">Variable Declaration and Assignment</a></p>
-  </li>
-  <li>
-    <p><a href="arith.md">Arithmetic</a></p>
-  </li>
-  <li>
-    <p><a href="comp.md">Comparison</a></p>
-  </li>
-  <li>
-    <p><a href="prec-assoc.md">Precedence and Associativity</a></p>
-  </li>
-  <li>
-    <p><a href="cond-branch.md">Conditional Branching</a></p>
-  </li>
-  <li>
-    <p><a href="def-it.md">Definite Iteration</a></p>
-  </li>
-  <li>
-    <p><a href="indef-it.md">Indefinite Iteration</a></p>
-  </li>
-</ul>
+    	if count == 5 {
+          break;
+    	}
+}
+</code></pre></div></div>
 
-<h2 id="compiler">Compiler</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let counter:i32 = 0;
+let result:i32 = 0; 
 
-<ul>
-  <li><a href="lexer.md">Lexer</a>
-    <ul>
-      <li><a href="tokens-list.md">Tokens</a></li>
-      <li><a href="state-trans.md">State Transition Table</a></li>
-    </ul>
-  </li>
-  <li><a href="parser.md">Parser</a></li>
-</ul>
+loop {
+  counter += 1;
+  if counter == 10 {
+    result = counter * 2;
+    break;
+  }
+};
+</code></pre></div></div>
 
     </main>
   </div>

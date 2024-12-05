@@ -1,3 +1,8 @@
+---
+layout: sidebar
+title: Data Types
+---
+
 # Tokens of Oxide
 All inputs mapped to their corresponding token.
 
